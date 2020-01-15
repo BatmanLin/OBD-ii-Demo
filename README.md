@@ -2,7 +2,7 @@
 
 
 Procedure commands of connecting OBD-ii bluetooth to raspberry pi
-first method:
+Install Pi Bluetooth Manager or using Command line as following:
 ```
 bluetoothctl
 power on
