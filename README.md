@@ -51,8 +51,14 @@ rfcomm <-- shows nothing
 sudo rfcomm bind rfcomm0 <OBD2_mac_address> 
 rfcomm <-- shows 'rfcomm0: <OBD2_mac_address> channel 1 clean'
 ```
-### successful config should have output like this:
+### successful config should have output from Screen like this:
 
 ![screenshot](/Screenshot.png)
+from https://www.youtube.com/watch?v=DABytIdutKk
+
+### Or from Minicom like this:
+
+![screenshot](/Screenshot2.png)
+from https://www.youtube.com/watch?v=NvYXtQmOYDw
 
 TODO//troubleshoting
