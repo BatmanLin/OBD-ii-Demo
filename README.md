@@ -1,4 +1,4 @@
-## 1st problem: Cannot type *AT* command via Screen or Minicom in Raspberry Pi
+## 1st problem: Cannot type *AT* command via Screen or Minicom on Raspberry Pi
 
 
 Procedure commands of connecting OBD-ii bluetooth to raspberry pi
