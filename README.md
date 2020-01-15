@@ -9,13 +9,25 @@ power on
 pairable on
 agent on
 default-agent
-scan on <-- find OBDII and its MAC address
-pair <OBD2_mac_address> <-- enter pin 1234
-trust <OBD2_mac_address>  <-- this will allow Pi to automatically pair with the device next time
-scan off
-paired-devices <-- OBDII should be within list
-quit
 
+#find OBDII and its MAC address
+scan on   
+
+pair <OBD2_mac_address>
+#enter pin 1234
+
+#Automatically pair with the device next time
+trust <OBD2_mac_address>  
+
+scan off
+
+#show paired devices, OBDII should be within list
+paired-devices  
+
+quit
+```
+check /dev/
+```
 cd /dev
 ls <-- check if there is rfcomm0
 
@@ -47,9 +59,12 @@ sudo minicom -b 9600 -o -D /dev/rfcomm0
 Then, the release command is needed to release and rebind the rfcomm0 with <OBD2_mac_address> 
 ```
 sudo rfcomm release OBDII
-rfcomm <-- shows nothing
+
 sudo rfcomm bind rfcomm0 <OBD2_mac_address> 
-rfcomm <-- shows 'rfcomm0: <OBD2_mac_address> channel 1 clean'
+
+rfcomm
+
+#shows 'rfcomm0: <OBD2_mac_address> channel 1 clean'
 ```
 ### successful config should have output from Screen like this:
 
