@@ -85,6 +85,6 @@ python3 reader.py
 ```
 Out put as readeroutput1.png & readeroutput2.png
 
-**TODO//
-Troubleshoting AT Commands Sending in Raspberry Pi
-Based on OBD python to make a program with UI and keep asking OBD data and log **
+**TODO**
+* Troubleshoting AT Commands Sending in Raspberry Pi
+* Based on OBD python to make a program with UI and keep asking OBD data and log
