@@ -67,13 +67,24 @@ rfcomm
 #shows 'rfcomm0: <OBD2_mac_address> channel 1 clean'
 ```
 ### successful config should have output from Screen like this:
-
-![screenshot](/Screenshot.png)
-from https://www.youtube.com/watch?v=DABytIdutKk
+https://www.youtube.com/watch?v=DABytIdutKk
 
 ### Or from Minicom like this:
+https://www.youtube.com/watch?v=NvYXtQmOYDw
 
-![screenshot](/Screenshot2.png)
-from https://www.youtube.com/watch?v=NvYXtQmOYDw
+## However, connect to OBD python is successful
+install steps plz follow: https://python-obd.readthedocs.io/en/latest/
 
-TODO//troubleshoting
+```
+sudo rfcomm bind hci0 <OBD2_mac_address> 
+
+```
+run python script
+```
+python3 reader.py
+```
+Out put as readeroutput1.png & readeroutput2.png
+
+**TODO//
+Troubleshoting AT Commands Sending in Raspberry Pi
+Based on OBD python to make a program with UI and keep asking OBD data and log **
